@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Position e z-index</h1>
+
+    <div id="demo-display" class="container-aula">
+        <h2>A propriedade display, com foco no flexbox</h2>
+        <p>A propriedade <code>display</code> é a mais importante para o layout.<code>Display: flex;</code>transforma um container, permitindo alinhar seus filhos </p>
+    
+    <div class="flex-container">
+        <div class="box box1">caixa 1</div>
+        <div class="box box2">caixa 2</div>
+        <div class="box box3">caixa 3</div>
+    </div>
+
+
+    </div>
+    <!-- Position -->
+     <div id="demo-position" class="container-aula">
+        <h2>A propriedade position e z-index</h2>
+        <p>
+        <code>Position</code> tira os elementos do fluxo normal, para criar sobreposições e efeitos específicos
+        <code>Z-index</code> controla qual elemento fica na frente.
+        </p>
+
+        <div class="position-container">
+            <div class="box box1 position-relative">
+                position: relative <br>
+                z-index: 2; (na frente)
+            </div>
+            <div class="box box2 position-absolute">
+                position: absolute <br>
+                z-index: 1; (atrás)
+
+            </div>
+            <div class="box box3 position-static">
+                position: static; (padrão, ou seja, não altera)
+            </div>
+        </div>
+      <div class="box position-fixed">
+        <code>position: fixed;</code>. Role a página!!
+      </div>
+    </div>
+
+    
+</body>
+</html>
+
+

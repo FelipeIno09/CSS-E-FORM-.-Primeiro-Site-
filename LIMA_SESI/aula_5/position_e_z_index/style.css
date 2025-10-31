@@ -1,0 +1,130 @@
+/* Position e Z-index */
+
+.container-aula{
+    border: 2px dashed #ccc;
+    padding: 20px;
+    margin-bottom: 40px;
+    border-radius: 8px ;
+}
+
+.container-aula h2{
+    margin-top: 0;
+    
+}
+
+.box{
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.box1{
+    background-color: blue;}
+
+.box2{
+    background-color: red;}
+
+    .box3{
+    background-color: yellowgreen;}
+
+/* Trabalhando com content da propriedade "display" */
+
+#demo-display .flex-container{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    height: 150px;
+    justify-content: space-evenly;
+
+}
+
+#demo-position .position-container{
+    position: relative;    /* Cria o contexto para o elemento position: absolute; */
+    height: 250px;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+#demo-position .position-relative{
+    position: relative;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+}
+
+#demo-position .position-absolute{
+    position: absolute;
+    bottom: 30px;   /* Fica 30px do fundo do .position-container */
+    right: 30px; /* fica 30px a direita do .position-container */
+    width: 200px;
+
+}/* Position e z-index */
+.container-aula{
+    border: 2px dashed #444;
+    padding: 20px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+}
+
+.container-aula h2 {
+    margin-top: 0;
+}
+
+.box{
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    text-align: center;
+    margin: 5px;
+    border-radius: 5px;
+}
+.box1{background-color: blue;}
+.box2{background-color: rgb(255, 0, 0);}
+.box3{background-color: rgb(0, 255, 13);}
+
+/* trabalhando com content da propriedade display */
+#demo-display .flex-container{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    height: 150px;
+    justify-content: space-around;
+
+}
+
+#demo-position .position-container{
+    /* Cria o contexto para o elemento positio-absolute  */
+    position:relative;   
+    height: 250px;
+    padding: 10px;
+    border: 2px solid black;
+
+}
+
+#demo-position .position-relative{
+     position:relative; 
+     top: 20px;
+     left: 20px;
+     z-index: 2;
+
+}
+
+#demo-position .position-absolute{
+    position: absolute;
+    bottom: 30px ;
+    right: 30px;
+    width: 200px;
+    z-index: 1;
+
+}
+
+
+#demo-position .position-fixed{
+    position: fixed;
+    bottom: 20px;
+    right: 20px; /* Fixo em relação à janela do navegador */
+    background-color: brown;
+    z-index: 100;
+    /* z-index alto para ter certeza que irá ficar na frente de tudo */
+}
